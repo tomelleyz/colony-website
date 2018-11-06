@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
-<body>
-    
-            
+<body onload="Loader()">
+
+    <div id="loader"></div> <!-- Preloader -->
+
+    <div id="page" class="animatebottom">
+
     <!-- Menu for small screens -->
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"><i class="fas fa-times" style="font-size: 35px"></i></a>
@@ -94,6 +97,8 @@
         </div>
         <span>&copy; 2018. Colony Tech</span>
     </div>
+
+    </div> <!-- End of #page div -->
     
 </body>
 </html>
