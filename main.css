@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* topnav styling */
+.topnav ul {
+    margin: 0;
+    padding: 20px 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    list-style-type: none;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #223def, #00aeff);
+    color: white;
+}
+.topnav .left {
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+.topnav .right {float: right;}
+.topnav li {padding: 10px;}
+.topnav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+.topnav a:hover {
+    border-bottom: 3px solid white;
+    transition: 0.3s;
+}
+.topnav .menu-icon {display: none;}
+
+/* sidenav styling */
+.sidenav {
+    background-color: #1a1a1a;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s;
+    overflow: hidden;
+    padding-top: 55px;
+}
+.sidenav a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: silver;
+}
+.sidenav a:not(:first-child) {
+    padding: 15px 25px;
+}
+.sidenav a:hover {
+    color: white;
+    transition: 0.3s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+/* Styling for home */
+.home {
+    background: linear-gradient(to right, #223def, #00aeff);
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+.home-content {
+    display: inline-block;
+    height: 248px;
+    width: 45%;
+    margin: 248px 0;
+    padding: 0 50px 0 80px;
+}
+.responsive-design {
+    height: 494px;
+    width: 564px;
+    position: absolute;
+    top: 185px;
+    right: 110px;
+    z-index: 0;
+    background-image: url(Images/Art\ Illustration.png);
+    background-position: center;
+    background-size: cover;
+}
+.explore-div {margin: 160px 0 0 0;}
+.explore-div a {
+    color: white;
+    text-decoration: none;
+}
+.about, .work-overview {
+    color: #262626;
+    margin: 0;
+    padding: 40px 450px 40px 80px;
+}
+.about h1, .work-overview h1 {margin-bottom: 0;}
+.about span, .work-overview span {
+    font-size: 25px;
+}
+.work-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding:  0 0 40px 80px;
+    color: #262626;
+}
+.each-work {
+    width: 330px;
+    height: 250px;
+    margin: 20px 60px 20px 0;
+}
+.contact {
+    background-color: #00aeff;
+    color: white;
+    padding: 30px 0 60px 80px;
+}
+.contact span {color: #262626;}
+.contact a {
+    background-color: #223def;
+    color: white;
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+.contact a:hover {
+    background-color: white;
+    color: #223def;
+    transition: 0.4s;
+}
+.footer {
+    padding: 20px 60px 10px 15px;
+    color: #223def;
+}
+.social-icons {
+    float: right;
+    font-size: 20px;
+}
+.social-icons a {margin: 5px;}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 700px) {
+    .topnav .right {display: none;}
+    .topnav .menu-icon {
+        float: right;
+        display: block;
+    }
+    .topnav ul {
+        padding: 2px;
+        height: 60px;
+    }
+    .home {height: auto;}
+    .home-content {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: 59px 0;
+        padding: 60px 15px;
+    }
+    .explore-div {display: none;}
+    .responsive-design {
+        position: relative;
+        display: block;
+        height: 250px;
+        width: 300px;
+        margin: 30px auto 0 auto;
+        top: 0;
+        right: 0;
+    }
+    .about, .work-overview {padding: 20px 15px;}
+    .work-container {padding: 0 0 10px 40px;}
+    .each-work {margin: 20px 15px;}
+    .contact {padding-left: 15px;}
+    .footer {padding: 20px 15px 15px;}
+    .social-icons {float: none;}
+}
