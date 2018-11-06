@@ -114,7 +114,7 @@ body {
     margin: 248px 0;
     padding: 0 50px 0 80px;
 }
-.responsive-design {
+.artIllustration {
     height: 494px;
     width: 564px;
     position: absolute;
@@ -125,10 +125,24 @@ body {
     background-position: center;
     background-size: cover;
 }
-.explore-div {margin: 160px 0 0 0;}
+.explore-div {
+    margin: 160px 0 0 0;
+    position: relative;
+}
+.downarrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: bouncearrow .45s ease-in-out infinite;
+}
+@keyframes bouncearrow {
+    from {bottom: 0;}
+    to {bottom: 15px;}
+}
 .explore-div a {
     color: white;
     text-decoration: none;
+    margin-left: 23px;
 }
 .about, .work-overview {
     color: #262626;
