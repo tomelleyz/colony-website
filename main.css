@@ -57,6 +57,7 @@ body {
 .topnav li {padding: 10px;}
 .topnav a {
     color: white;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -86,6 +87,8 @@ body {
     display: block;
     text-decoration: none;
     color: silver;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 .sidenav a:not(:first-child) {
     padding: 15px 25px;
@@ -114,32 +117,14 @@ body {
     margin: 248px 0;
     padding: 0 50px 0 80px;
 }
-.home-content span {
-    font-size: 2em;
-    margin: 0.67em 0;
-    font-weight: bold;
-}
-@keyframes animateheading {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-#start {
-    animation: animateheading 2s ease-in-out 2.5s;
-}
-#create {
-    animation: animateheading 2s ease-in-out 3.5s;
-}
-#grow {
-    animation: animateheading 2s ease-in-out 4.5s;
-}
 .artIllustration {
     height: 410px;
-    width: 460px;
+    width: 480px;
     position: absolute;
-    top: 155px;
+    top: 190px;
     right: 100px;
     z-index: 0;
-    background-image: url(Images/Art\ Illustration.png);
+    background-image: url(Images/Icons.png);
     background-position: center;
     background-size: cover;
 }
@@ -165,7 +150,7 @@ body {
 .about, .work-overview {
     color: #262626;
     margin: 0;
-    padding: 40px 450px 40px 80px;
+    padding: 50px 450px 0 80px;
 }
 .about h1, .work-overview h1 {margin-bottom: 0;}
 .about span, .work-overview span {
@@ -174,7 +159,7 @@ body {
 .work-container {
     display: flex;
     flex-flow: row wrap;
-    padding:  0 0 40px 80px;
+    padding:  0 0 0 80px;
     color: #262626;
 }
 .each-work {
@@ -203,7 +188,7 @@ body {
     transition: 0.4s;
 }
 .footer {
-    padding: 20px 60px 10px 15px;
+    padding: 20px 60px 20px 15px;
     color: #223def;
 }
 .social-icons {
@@ -212,8 +197,24 @@ body {
 }
 .social-icons a {margin: 5px;}
 
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+    .topnav ul {
+        height: 65px;
+        padding: 10px 45px;
+    }
+    .home-content {padding: 0 30px 0 20px;}
+    .artIllustration {
+        height: 295px;
+        width: 345px;
+        top: 220px;
+        right: 80px;
+    }
+    .about, .work-overview {padding: 35px 180px 0 20px;}
+    .contact {padding-left: 20px;}
+    .footer {padding-left: 20px;}
+}
 /* Media queries for smaller screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .topnav .right {display: none;}
     .topnav .menu-icon {
         float: right;
@@ -241,10 +242,14 @@ body {
         top: -20px;
         right: 0;
     }
-    .about, .work-overview {padding: 20px 15px;}
-    .work-container {padding: 0 0 10px 40px;}
+    .about, .work-overview {padding: 30px 15px 0 15px;}
+    .work-container {padding: 0 0 0 40px;}
     .each-work {margin: 20px 15px;}
     .contact {padding-left: 15px;}
     .footer {padding: 20px 15px 15px;}
     .social-icons {float: none;}
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+    .home-content {padding: 60px 90px 60px 15px;}
 }
