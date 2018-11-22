@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
 }
+#loaderLogo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
 #loader {
     position: absolute;
     left: 50%;
@@ -50,8 +56,8 @@ body {
 }
 .topnav .left {
     float: left;
-    font-size: 28px;
-    font-weight: bold;
+    /*font-size: 28px;
+    font-weight: bold;*/
 }
 .topnav .right {float: right;}
 .topnav li {padding: 10px;}
@@ -145,7 +151,16 @@ body {
 .explore-div a {
     color: white;
     text-decoration: none;
-    margin-left: 23px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px 10px;
+    margin-left: 25px;
+    padding: 5px 10px;
+    transition: .3s;
+}
+.explore-div a:hover {
+    background-color: white;
+    color: #223def;
 }
 .about, .work-overview {
     color: #262626;
@@ -195,12 +210,15 @@ body {
     float: right;
     font-size: 20px;
 }
-.social-icons a {margin: 5px;}
+.social-icons a {
+    margin: 8px;
+    color: #223def;
+}
 
 @media screen and (max-width: 1000px) and (min-width: 769px) {
     .topnav ul {
         height: 65px;
-        padding: 10px 45px;
+        padding: 10px 45px 10px 10px;
     }
     .home-content {padding: 0 30px 0 20px;}
     .artIllustration {
