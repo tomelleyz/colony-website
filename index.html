@@ -8,15 +8,17 @@
     <meta name="description" content="Colony is a digital agency that loves helping brands achieve success through strategized, simple, effective designs and technologies"/>
     <meta name="keywords" content="Website Development, Branding, Digital Marketing, App Development, Software Development"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <script src="main.js"></script>
 </head>
 <body onload="Loader()">
 
-    <img id="loaderLogo" src="Images/Branding.png" alt="Colony logo"/>
+    <img id="loaderLogo" src="Images/Colony_logo_Original_color.png" alt="Colony logo"/> <!-- Preloader Logo -->
 
-    <div id="loader"></div> <!-- Preloader -->
+    <div id="loader"></div> <!-- Rotating preloader -->
 
     <div id="page" class="animatebottom"> <!-- Entire page -->
 
@@ -28,11 +30,12 @@
         <a href="#work" onclick="closeMenu()">Work</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
     </div>
-    
+    <!-- End of menu for small screens -->
+
     <!-- Menu for large screens -->
     <div id="topnav" class="topnav">
         <ul>
-            <li class="left"><img src="Images/logo.png" alt="Colony logo" width="135" height="35"/></li>
+            <li class="left"><img src="Images/Colony_logo_White_color.png" alt="Colony logo" width="135" height="35"/></li>
             <li class="right"><a href="#contact">Contact</a></li>
             <li class="right"><a href="#work">Work</a></li>
             <li class="right"><a href="#about">About</a></li>
@@ -40,7 +43,9 @@
             <li><a href="javascript:void(0);" onclick="openMenu()" class="menu-icon"><i class="fas fa-bars" style="font-size: 35px"></i></a></li>
         </ul>
     </div>
-    
+    <!-- End of menu for large screens -->
+
+    <!-- HOME -->
     <div id="home" class="home">
         <div id="home-content" class="home-content">
             <h1>Start . Create . Grow</h1>
@@ -51,13 +56,17 @@
         </div>
         <div class="artIllustration"></div>
     </div>
-    
+    <!--End of HOME -->
+
+    <!-- ABOUT -->
     <div id="about" class="about">
         <h1>ABOUT COLONY</h1>
         <span>&#x2796;&#x2796;</span>
         <p>We are a creative digital agency comprising of strategists, designers and developers. Combining our abilities together we have a common goal to build amazing brands and make sure they head to success through strategized, simple, effective brand identities and well drafted web development.</p>
     </div>
-    
+    <!-- end of ABOUT-->
+
+    <!-- WORK -->
     <div id="work" class="work">
         <div class="work-overview">
             <h1>WHAT WE OFFER</h1>
@@ -83,13 +92,17 @@
             </div>
         </div>
     </div>
+    <!-- End of WORK -->
     
+    <!-- CONTACT -->
     <div id="contact" class="contact">
         <h2>Let's Get Started!</h2>
         <p><span>Send us a mail:</span> colonytechng@gmail.com <span>or</span><br /><span>Call:</span> +2348077201806</p><br>
         <a href="mailto:colonytech@gmail.com?Subject=Hello%20Colony!">Give Colony a try</a>
     </div>
+    <!-- End of CONTACT -->
     
+    <!-- FOOTER -->
     <div id="footer" class="footer">
         <div class="social-icons">
             <a href="javascript:void(0);"><img src="Images/Facebook.png" alt="Facebook Icon" width="22" height="22"/></a>
@@ -99,6 +112,7 @@
         </div>
         <span>&copy; 2018. Colony Tech</span>
     </div>
+    <!-- End of FOOTER -->
 
     </div> <!-- End of #page div -->
     
